@@ -1,0 +1,38 @@
+I Prova - Disciplina Tópicos Avançados em Desenvolvimento de Web (INF0084)
+
+1. Primeiramente, os desenvolvedores terão que se certificar que estão com a versão mais recente do projeto, para isso, utiliza-se o comando git pull, que irá atualizar o repositório local com a versão remota.
+Agora com a versão atual do projeto, cada desenvolvedor irá utilizar o  comando git branch, para listar as branches do repositório, dessa maneira irão se certificar que estão na branch de desenvolvimento principal.
+Tendo o projeto atualizado e estando na branch principal, os desenvolvedores irão utilizar o comando git checkout -b (nome da branch, podendo ser a demanda que vão trabalhar, por exemplo, git checkout -b sindicalize),
+este comando irá pegar o que tem na branch atual (no caso, a branch principal), e irá criar uma nova branch com os conteúdos.
+Os desenvolvedores irão realizar as modificações na branch respectiva de suas demandas, e utilizaram o comando git add para adicionar essas alterações no diretório ativo à área de staging, por exemplo, git add form_produtos.php, 
+e depois o comando git commit -m “(mensagem do commit)”, por exemplo, git commit -m  “Formulário de cadastro dos produtos” para confirmar essas alterações. Logo após, utilizaram o comando git push, para enviar as alterações para o
+repositório remoto. Como o projeto é em equipe é sempre bom lembrar de utilizar o comando git pull, para ter certeza que está com a versão atual.
+Após o término das alterações necessárias, uma equipe de revisores irão avaliar e utilizaram o comando git merge (estando na branch principal) com a branch de respectiva demanda, por exemplo git merge sindicalize, que irá  combinar
+as sequências dos commits para a branch atual.
+
+2.  O controle de versão é uma ferramenta de software que nos permite rastrear e administrar as alterações de um projeto. Ele faz bastante diferença na gestão do fluxo de código de um time de desenvolvimento, porque permite que várias pessoas
+trabalhem no mesmo projeto e ao mesmo tempo, rastreando cada alteração individual feita, dessa maneira, podemos saber o que cada pessoa fez e quando, tendo um maior controle sobre as versões.
+
+
+3. O sistema de versionamento não tem como saber qual dessas versões é a correta, então ele irá mostrar uma mensagem informando que tem conflitos, mostrando o trecho exato e as suas diferenças. Temos que observar e resolver manualmente, 
+escolhendo uma versão. Depois que o conflito foi resolvido, é necessário adicionar essas alterações com o git add arquivo, depois confirmar essas alterações com git commit -m “Conflito resolvido.”, e git push para enviar as alterações.
+
+4. JS é a linguagem padrão dos navegadores para o desenvolvimento do lado cliente, porém, todas as tentativas para colocá-la no lado servidor não deram certo, porque ela tem uma performance baixa se compararmos com outras linguagens
+como Java ou PHP, por exemplo. JS e seus motores vem evoluindo cada vez mais, e agora com node.js é possível desenvolver do lado servidor também.
+
+
+5. O servidor HTTP é um software que processa e responde as requisições recebidas,  utilizando o protocolo HTTP como forma de comunicação entre o servidor e os clientes. Nessa comunicação, o cliente solicita ao servidor um código de status HTTP
+composto por três números, esses códigos são divididos em  cinco categorias, sendo que o primeiro número do código define a classe de resposta, sendo elas:
+100 - Informa que o servidor ainda está processando a requisição recebida;
+200 - Informa que a solicitação está funcionando como deveria;
+300 - Informa que a solicitação foi recebida, mas que o servidor precisou realizar algum tipo de redirecionamento;
+400 - Informa um erro do lado do usuário;
+500 - Informa um erro do lado do servidor.
+
+Os  verbos HTTP servem para informar a ação que está sendo requisitada pelo cliente, sendo eles: 
+
+POST - criar;
+GET - ler;
+PUT - atualizar;
+PATCH  - alterar;
+DELETE - excluir.
